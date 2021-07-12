@@ -3,6 +3,8 @@ function solution(gift_cards, wants) {
   let cnt = 0
   let info = [];
 
+
+
   for (let i = 0; i < wants.length; i++) {
     info.push(0)
   }
@@ -16,6 +18,7 @@ function solution(gift_cards, wants) {
       }
     }
   }
+
   answer = wants.length - cnt
   // console.log(answer);
   return answer;
