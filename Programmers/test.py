@@ -1,3 +1,2 @@
-a = 'b'
-for i in a[1:]:
-    print(i)
+if 4 / 2 ==  8 / 4:
+    print('ggod')
