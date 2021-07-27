@@ -1,5 +1,5 @@
-a = [(1, '2'), (3, '2,1'), (5, '1,2,3'), (7, '1,2,4,3')]
+from itertools import combinations
 
-b = ['12' , '1']
-b.sort()
-print(b)
+a ='basdfg'
+print(sorted(a))
+print(list(combinations(a, 2)))
