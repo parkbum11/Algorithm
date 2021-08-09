@@ -1,5 +1,2 @@
-from itertools import combinations
-
-a ='basdfg'
-print(sorted(a))
-print(list(combinations(a, 2)))
+if '150' > '20':
+    print('ggpd')
