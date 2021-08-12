@@ -1,19 +1,23 @@
 def solution(s):
     answer = 0
-    if len(s) & 1: return answer
-    new_s = []
-    for ss in s: new_s.append(ss)
-    stack = []
-    while True:
-        for ss in new_s:
-            if ss in '{[(':
-                stack.append(ss)
+    ss = s + s
+    info = {'[' : ']', '{' : '}', '(' : ')'}
+    length = len(s)
+    for i in range(length):
+        check_s = ss[i:length + i]
+        stack, couple = [], 0
+        for j in check_s:
+            if j in info:
+                stack.append(j)
             else:
                 if len(stack) == 0: break
                 else:
-        a = new_s.pop(0)
-        new_s.append(a)
-
-    return answer
-
-solution("}]()[{")
+                    a = stack.pop()
+                    if info[a] != j: break
+                    else:
+                        if len(stack) == 0: couple += 1
+        else:
+            answer = couple
+            break
+    print(answer)
+solution("[][][][]")
