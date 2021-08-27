@@ -1,2 +1,2 @@
-if '150' > '20':
-    print('ggpd')
+a = 'agb'
+print(a[:-1])
