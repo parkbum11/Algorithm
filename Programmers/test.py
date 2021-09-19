@@ -1,6 +1,4 @@
-def solution(seoul):
-    answer = '김서방은 ' + str(seoul.index('Kim')) + '에 있다'
-    return answer
-
-
-solution(["Jane", "Kim"])
+a = ['00320002012', '00310000132']
+b = [[0,0,3,2,1], [0,0,3,2,2]]
+b.sort(reverse=True)
+print(b)
