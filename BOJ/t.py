@@ -1,4 +1,4 @@
-a = [(2, 1), (1, 2), (1, 1)]
-a.sort()
-print(sorted(a))
+a = ()
+b = {'a':1,'b':2}
+a.__add__(b)
 print(a)
